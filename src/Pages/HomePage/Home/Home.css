@@ -1,0 +1,15 @@
+.banner{
+    background-image: url('../../../image/banner/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:400px
+}
+.banner-text{
+    
+}
+.project-container a{
+    text-decoration: none;
+    color: white;
+}
+
+    
