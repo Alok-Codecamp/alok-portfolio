@@ -1,5 +1,5 @@
 import React from 'react';
-import bradcam from '../../../image/bradcam.png'
+import img1 from '../../../image/banner/bradcam.png';
 const Banner = () => {
     return (
         <div>

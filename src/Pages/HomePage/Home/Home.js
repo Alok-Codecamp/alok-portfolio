@@ -13,19 +13,18 @@ import ContactMe from '../../ContactMe/ContactMe';
 const Home = () => {
     return (
         <div className="container-div">
+            
+            <div className="banner  pb-5 text-light">
             <Navigation></Navigation>
-            <div className="banner pt-5 pb-5 text-light">
                 <div className=" d-flex align-items-center justify-content-evenly banner-text">
                     <div className=" ">
-                        <h2>Hello I am Alok Kumar</h2>
-                        <h4>Front end Web developer</h4>
-                        <p className="mt-3">
+                        {/* <h2>Hello I am Alok Kumar</h2>
+                        <h4>Front end Web developer</h4> */}
+                        {/* <p className="mt-3">
                             Specializing in react app development.<br /> If you're  looking to hire, contact me here.
-                        </p>
+                        </p> */}
                     </div>
-                    <Button>
-                        <a style={{ color: 'white', textDecoration: 'none' }} href={my_Resume} download="Alok_Resume"> Download Resume</a>
-                    </Button>
+                   
                 </div>
             </div>
             <div className="project-container container">
