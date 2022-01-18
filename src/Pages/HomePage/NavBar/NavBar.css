@@ -6,7 +6,6 @@
 .Nav-bar-text{
     font-family: 'Roboto', sans-serif;
     text-align: left;
-    background-color: red;
     height: 60px;
     display: flex;
     align-items: center;
@@ -14,19 +13,20 @@
     padding: 0px 40px 0px 60px;
 }
  .logo{
-     font-size: 28px;
+     font-size: 24px;
      font-weight: 600;
      
  }
 
-nav.Nav-bar-text ul{
+nav.Nav-bar-text ul.desktop-menu{
     display: flex;
     list-style: none;
     align-items: center;
     margin-bottom: 0;
+   
 }
 
-.Nav-bar-text ul li a{
+.Nav-bar-text ul.desktop-menu li a{
     color: white;
     text-decoration: none;
     margin-left: 20px;
@@ -40,48 +40,75 @@ nav.Nav-bar-text ul{
  text-decoration: 3px white underline;
  
 }
-.responsive{
+.bar-line, #menu-btn{
     display: none;
 }
-.bar-line{
+.mobile-menu{
     display: none;
+}
+
+.download-resumi{
+    background-color:#D465EF;
+    height: 42px;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 16px;
+}
+button.download-resumi a{
+    color: white;
+    text-decoration: none;
 }
 
 @media (max-width:988px){
     .bar-line{
         display: block;
-        font-size: 36px;
-        margin-bottom: 0px;
+        position: fixed;
+        font-size: 30px;
+        top: 5px;
+        left: 92%;
+        z-index: 3;
+        cursor: pointer;
     }
-    .Nav-bar-text{
-        
-    }
-    .responsive {
-        display: block;
-        background-color: white;
-        height: 190px;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
-    .responsive ul{
-        padding-top: 10px;
-    }
-    .responsive ul li{
-        margin-bottom: 10px;
-    }
-    .responsive ul li a{
-        text-decoration: none;
-        color: #1b1b1b;
-        font-weight: 500;
-    }
-    .responsive ul li a:hover{
-     text-decoration: 3px black underline ;
-     transition: all 0.4s ease;   
-    }
-    nav.Nav-bar-text ul{
+    nav.Nav-bar-text ul.desktop-menu{
         display: none;
     }
-    
+    nav.Nav-bar-text{
+        background-color:#1b1b1b;
+        position: fixed;
+        top:0px;
+        right: 0;
+        left: 0;
+        z-index:2;
+    }
+     ul.mobile-menu{
+        display: block;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1;
+        right: 9%;
+        top:-140px;
+        padding: 10px 10px;
+        width: 80%;
+        background-color: white;
+        transition: all 0.2s ease-out;
+    }
+     ul.mobile-menu li{
+         text-align: left;
+         list-style: none;
+        margin-top: 6px;
+    }
+ ul.mobile-menu li a{
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+    }
+    #menu-btn:checked ~ .mobile-menu{
+        top: 60px;
+        transition: all 0.3s ease-in;
+       
+    }
+    button.download-resumi{
+        display:none;
+    }
+   
 }
