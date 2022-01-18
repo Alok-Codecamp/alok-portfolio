@@ -10,12 +10,25 @@ import project4 from '../../../image/project/yoga-zone/Screenshot_1.png'
 import project5 from '../../../image/project/tutorial-home/Screenshot_1.png'
 import project6 from '../../../image/project/anytime-buys/Screenshot_1.png'
 import ContactMe from '../../ContactMe/ContactMe';
+import me from '../../../image/about/me.jpg';
+import bradcam from '../../../image/banner/bradcam.png'
 const Home = () => {
     return (
         <div className="container-div">
             <div className="banner  pb-5 text-light">
             <Navigation></Navigation>
+            <div className='bannar-content'>
+                <div className='banner-img'>
+                    <img className='me-img' src={me} alt="" />
+                </div>
+                <div className='banner-text'>
+                   <h1><span>Hello</span> I Am Alok Kumar </h1>
+                   <h4><span>----</span> Front-End Web Developer</h4>
+                </div>
             </div>
+            </div>
+            
+            
             <div className="project-container container">
                 <h2 id="projects" className="text-primary mt-5 mb-4">Explore my project</h2>
                 <Row xs={1} md={2} lg={3} className="g-4">
