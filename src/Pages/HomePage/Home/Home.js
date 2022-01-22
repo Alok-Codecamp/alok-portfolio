@@ -12,20 +12,39 @@ import project6 from '../../../image/project/anytime-buys/Screenshot_1.png'
 import ContactMe from '../../ContactMe/ContactMe';
 import me from '../../../image/about/me.jpg';
 import bradcam from '../../../image/banner/bradcam.png'
+import { Animated } from 'react-animated-css';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faFacebookF, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+
 const Home = () => {
+   
     return (
         <div className="container-div">
-            <div className="banner  pb-5 text-light">
+            <div className="banner  text-light">
             <Navigation></Navigation>
             <div className='bannar-content'>
+               
                 <div className='banner-img'>
+                    <Animated animationIn='zoomIn' isVisible={true}>
                     <img className='me-img' src={me} alt="" />
+                    </Animated>
                 </div>
-                <div className='banner-text'>
-                   <h1><span>Hello</span> I Am Alok Kumar </h1>
-                   <h4><span>----</span> Front-End Web Developer</h4>
+                <div className='banner-text xs-fs-6'>
+                   <Animated animationIn='fadeInLeft'  isVisible={true}>
+                   <h1 ><span>Hello</span> I Am Alok Kumar </h1>
+                   </Animated>
+                  <Animated animationIn='fadeInRight' isVisible={true}>
+                  <h4><span>----</span> Front-End Web Developer</h4>
+                  </Animated>
                 </div>
+                <div className='social-icon'>
+                <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 ms-xs-4 fb'  icon={faFacebookF}/>
+                <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 git' icon={faGithub}/>
+                <FontAwesomeIcon className='mt-lg-4 mt-sm-4 mt-md-4' icon={faLinkedinIn}/>
             </div>
+            </div>
+           
             </div>
             
             

@@ -85,10 +85,10 @@ button.download-resumi a{
         flex-direction: column;
         position: fixed;
         z-index: 1;
-        right: 9%;
-        top:-140px;
-        padding: 10px 10px;
-        width: 80%;
+        top:-164px;
+
+        padding: 10px 60% 10px 10px;
+        width:auto;
         background-color: white;
         transition: all 0.2s ease-out;
     }
