@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+
+.Nav-bar-text{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 60px;
+}
+ .logo{
+     font-size: 24px;
+     font-weight: 600;
+     
+ }
+
+nav.Nav-bar-text ul.desktop-menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+   
+}
+
+.Nav-bar-text ul.desktop-menu li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+}
+
+.Nav-bar-text ul li a:hover,
+.Nav-bar-text ul li a.active {
+ text-decoration: 3px white underline;
+ 
+}
+.bar-line, #menu-btn{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+.download-resumi{
+    background-color:#D465EF;
+    height: 42px;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 16px;
+}
+button.download-resumi a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:988px){
+    .bar-line{
+        display: block;
+        position: fixed;
+        font-size: 30px;
+        top: 5px;
+        left: 92%;
+        z-index: 3;
+        cursor: pointer;
+    }
+    nav.Nav-bar-text ul.desktop-menu{
+        display: none;
+    }
+    nav.Nav-bar-text{
+        background-color:#1b1b1b;
+        position: fixed;
+        top:0px;
+        right: 0;
+        left: 0;
+        z-index:2;
+    }
+     ul.mobile-menu{
+        display: block;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1;
+        top:-164px;
+
+        padding: 10px 60% 10px 10px;
+        width:auto;
+        background-color: white;
+        transition: all 0.2s ease-out;
+    }
+     ul.mobile-menu li{
+         text-align: left;
+         list-style: none;
+        margin-top: 6px;
+    }
+ ul.mobile-menu li a{
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+    }
+    #menu-btn:checked ~ .mobile-menu{
+        top: 60px;
+        transition: all 0.3s ease-in;
+       
+    }
+    button.download-resumi{
+        display:none;
+    }
+   
+}
