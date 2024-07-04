@@ -6,11 +6,11 @@
 .Nav-bar-text{
     font-family: 'Roboto', sans-serif;
     text-align: left;
-    height: 60px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 40px 0px 60px;
+    padding: 0px 20px 0px 20px;
 }
  .logo{
      font-size: 24px;
@@ -28,15 +28,19 @@ nav.Nav-bar-text ul.desktop-menu{
 
 .Nav-bar-text ul.desktop-menu li a{
     color: white;
+    background-color: #FF6100;
+    padding: 3px 10px 3px 10px;
     text-decoration: none;
     margin-left: 20px;
     font-weight: 500;
     letter-spacing: 1px;
+    transform: scale(1);
     transition: all 0.4s ease;
+    border-radius: 15px;
 }
 
 .Nav-bar-text ul li a:hover,
-.Nav-bar-text ul li a.active {
+.Nav-bar-text ul li a:active {
  text-decoration: 3px white underline;
  
 }
@@ -45,18 +49,6 @@ nav.Nav-bar-text ul.desktop-menu{
 }
 .mobile-menu{
     display: none;
-}
-
-.download-resumi{
-    background-color:#D465EF;
-    height: 42px;
-    border: none;
-    border-radius: 2px;
-    padding: 4px 16px;
-}
-button.download-resumi a{
-    color: white;
-    text-decoration: none;
 }
 
 @media (max-width:988px){

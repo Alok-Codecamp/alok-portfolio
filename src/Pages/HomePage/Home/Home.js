@@ -11,7 +11,7 @@ import project5 from '../../../image/project/tutorial-home/Screenshot_1.png'
 import project6 from '../../../image/project/anytime-buys/Screenshot_1.png'
 import ContactMe from '../../ContactMe/ContactMe';
 import me from '../../../image/about/me.jpg';
-import banner from '../../../image/banner/banner1.png'
+import banner from '../../../image/banner/banner1.jpg'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faFacebookF, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <div className="container-div">
             <div className="banner  text-light">
-
+                {/* <img src={banner} alt="" /> */}
                 <Navigation></Navigation>
                 <div className='bannar-content'>
 

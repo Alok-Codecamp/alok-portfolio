@@ -19,11 +19,12 @@ const Navigation = () => {
           <li><a href="#">Porject</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
+          <li><a href="">Download Resume</a></li>
         </ul>
 
-          <button className='download-resumi'>
+          {/* <button className='download-resumi'>
             <a href="">Download Resume</a>
-          </button>
+          </button> */}
         </nav>
         <input type="checkbox" name="" id="menu-btn" />
          <label className='bar-line' htmlFor="menu-btn">

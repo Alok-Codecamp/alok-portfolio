@@ -1,9 +1,9 @@
 .banner{
-    background-image: url('../../../image/banner/banner1.png');
+    background-image: url('../../../image/banner/banner1.jpg');
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover; 
-    height: 411px;
+    height: 378px;
 }
 .project-container a{
     text-decoration: none;
@@ -25,7 +25,7 @@
 
 @media (max-width:986px){
         .banner{
-            background-image: url('../../../image/banner/banner.png');
+            background-image: url('../../../image/banner/banner1.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             padding-top: 60px;
