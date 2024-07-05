@@ -14,7 +14,8 @@ import me from '../../../image/about/me.jpg';
 import banner from '../../../image/banner/banner1.jpg'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faFacebookF, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const Home = () => {
 
@@ -27,10 +28,15 @@ const Home = () => {
 
 
 
-                    <div className='social-icon'>
-                        <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 ms-xs-4 fb' icon={faFacebookF} />
-                        <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 git' icon={faGithub} />
+                    <div className='contact-link'>
+                        <h1>contact me :</h1>
+                        <div className='social-icon'>
+                        <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 ms-xs-4 fb' icon={faEnvelope} />
+                        <FontAwesomeIcon 
+                        size={4}
+                        className='mt-lg-4 mt-md-4 mt-sm-4 git' icon={faGithub} />
                         <FontAwesomeIcon className='mt-lg-4 mt-sm-4 mt-md-4' icon={faLinkedinIn} />
+                        </div>
                     </div>
                 </div>
 

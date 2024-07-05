@@ -14,12 +14,17 @@
 
 
 
-.social-icon{
+.contact-link{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-left: 93%;
-    font-size: 30px;
+    position: absolute;
+    top: 73%;
+    left: 56%;
+}
+.social-icon{
+    margin-bottom: 20px;
+    font-size: large;
+  
 }
 
 

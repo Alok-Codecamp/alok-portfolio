@@ -40,7 +40,7 @@ const Navigation = () => {
           <li> <a href="">Download Resume</a></li>
         </ul>
     
-  
+           
        
        </div>
     );
