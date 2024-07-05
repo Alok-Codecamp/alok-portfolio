@@ -5,16 +5,17 @@ import { NavLink } from 'react-router-dom';
 import myResume from '../../../Rezumi/Alok Kumar.docx.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars } from '@fortawesome/free-solid-svg-icons';
+import mern from '../../../image/banner logo/mern.png'
 
 const Navigation = () => {
     return (
        <div>
        <nav className='Nav-bar-text'>
          <div className='logo'>
-          Alok
+          <img src={mern} alt="" width="62px" />
          </div>
          <ul className='desktop-menu'>
-          <li><a className='active' href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Porject</a></li>
           <li><a href="#">Blog</a></li>
