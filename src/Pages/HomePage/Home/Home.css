@@ -26,6 +26,10 @@
     font-size: large;
   
 }
+.font-awsome{
+    margin-left:20px ;
+    font-size: 48px;
+}
 
 
 @media (max-width:986px){

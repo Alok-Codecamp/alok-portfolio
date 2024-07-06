@@ -26,16 +26,15 @@ const Home = () => {
                 <Navigation></Navigation>
                 <div className='bannar-content'>
 
-
+                    <div></div>
 
                     <div className='contact-link'>
-                        <h1>contact me :</h1>
+                        <h1 style={{fontSize:"42px"}}>Contact :</h1>
                         <div className='social-icon'>
-                        <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 ms-xs-4 fb' icon={faEnvelope} />
+                        <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 ms-xs-4 fb font-awsome' icon={faEnvelope} />
                         <FontAwesomeIcon 
-                        size={4}
-                        className='mt-lg-4 mt-md-4 mt-sm-4 git' icon={faGithub} />
-                        <FontAwesomeIcon className='mt-lg-4 mt-sm-4 mt-md-4' icon={faLinkedinIn} />
+                        className='mt-lg-4 mt-md-4 mt-sm-4 git faLg font-awsome' icon={faGithub}  />
+                        <FontAwesomeIcon className='mt-lg-4 mt-sm-4 mt-md-4  font-awsome' icon={faLinkedinIn} />
                         </div>
                     </div>
                 </div>
