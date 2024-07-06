@@ -14,8 +14,8 @@ import me from '../../../image/about/me.jpg';
 import banner from '../../../image/banner/banner1.jpg'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faLinkedinIn,} from '@fortawesome/free-brands-svg-icons';
+import { faArrowAltCircleDown,faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
 
@@ -26,17 +26,30 @@ const Home = () => {
                 <Navigation></Navigation>
                 <div className='bannar-content'>
 
-                    <div></div>
+                  <div className='banner-footer'>
+                  <div className='resume-download-button'>
+                        <a href={my_Resume} download>Download Resume<FontAwesomeIcon 
+                        className='resume-download-icon'
+                        icon={faArrowAltCircleDown}  />
+                        </a> 
+                    </div>
 
                     <div className='contact-link'>
-                        <h1 style={{fontSize:"42px"}}>Contact :</h1>
-                        <div className='social-icon'>
-                        <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 ms-xs-4 fb font-awsome' icon={faEnvelope} />
-                        <FontAwesomeIcon 
+                        <p>Reach me :</p>
+                        {/* <div className='social-icon'> */}
+                       <a href="#contact" >
+                       <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 ms-xs-4 fb font-awsome' icon={faEnvelope} />
+                       </a>
+                      <a href="https://github.com/Alok-Codecamp" target='_blank'>
+                      <FontAwesomeIcon 
                         className='mt-lg-4 mt-md-4 mt-sm-4 git faLg font-awsome' icon={faGithub}  />
+                      </a>
+                        <a href="https://linkedin.com/in/alokkumarwebdeveloper/" target='_blank'>
                         <FontAwesomeIcon className='mt-lg-4 mt-sm-4 mt-md-4  font-awsome' icon={faLinkedinIn} />
-                        </div>
+                        </a>
+                        {/* </div> */}
                     </div>
+                  </div>
                 </div>
 
             </div>

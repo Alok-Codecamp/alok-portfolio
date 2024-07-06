@@ -10,25 +10,48 @@
     color: white;
 }
 
-
-
-
-
-.contact-link{
+.banner-footer{
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 73%;
-    left: 56%;
+    justify-content: flex-start;
+    margin-top: 17%;
 }
-.social-icon{
-    margin-bottom: 20px;
-    font-size: large;
-  
+.resume-download-button{
+    font-size: 42px;
+    border: 1px solid;
+    border-radius: 11px;
+    margin-left: 34px;
+    padding: 0 5px 0 5px;
+}
+.resume-download-button>a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+.resume-download-button>a:hover{
+    text-decoration-line: underline;
+    color: black;
+}
+.resume-download-icon{
+    margin:0px 0px -5px 8px;
+}
+.contact-link{
+    font-size: 42px;
+    display: flex;
+    margin-left: 23%;
+}
+.contact-link>p{
+    margin: 8px 0px 0px 0px;
+}
+.contact-link>a{
+    color:white;
+}
+.contact-link>a:hover{
+    color:black;
 }
 .font-awsome{
     margin-left:20px ;
-    font-size: 48px;
+  
 }
 
 
