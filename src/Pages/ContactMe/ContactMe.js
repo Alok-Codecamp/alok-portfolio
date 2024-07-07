@@ -21,7 +21,7 @@ const ContactMe = () => {
     }
     return (
         <div>
-          <h1 className="text-primary mt-5 mb-4">Contact Me</h1>
+          <h1 className="text-primary mt-5 mb-4">Get in Touch</h1>
             <Form onSubmit={handleContact}>
   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
     <Form.Control ref={user_name} name="user_name" type="text" placeholder="Enter your name" />

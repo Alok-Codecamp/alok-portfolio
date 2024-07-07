@@ -16,14 +16,31 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn,} from '@fortawesome/free-brands-svg-icons';
 import { faArrowAltCircleDown,faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 
 const Home = () => {
-
+    // const [isButtonClick, setButtonClick] = useState(true);
+    const contact = document.getElementById('mail');
+    // const handleContactNavLink=() =>{
+    //     setButtonClick(false);
+    //     if(isButtonClick){
+    //         contact.click();
+    //         console.log('its work')
+    //     }        
+    // }
+    // useEffect(()=>{
+       
+    // },[isButtonClick])
+    // handleContact={handleContactNavLink}
+    const ClickContact = ()=>{
+        contact.click()
+        // console.log('hi, I am here');
+    }
     return (
         <div className="container-div">
             <div className="banner  text-light">
                 {/* <img src={banner} alt="" /> */}
-                <Navigation></Navigation>
+                <Navigation ClickContact={ClickContact} ></Navigation>
                 <div className='bannar-content'>
 
                   <div className='banner-footer'>
@@ -37,7 +54,7 @@ const Home = () => {
                     <div className='contact-link'>
                         <p>Reach me :</p>
                         {/* <div className='social-icon'> */}
-                       <a href="#contact" >
+                       <a id='mail' href="#contact">
                        <FontAwesomeIcon className='mt-lg-4 mt-md-4 mt-sm-4 ms-xs-4 fb font-awsome' icon={faEnvelope} />
                        </a>
                       <a href="https://github.com/Alok-Codecamp" target='_blank'>
@@ -55,7 +72,7 @@ const Home = () => {
             </div>
 
 
-            <div className="project-container container">
+            <div id='All-projects' className="project-container container">
                 <h2 id="projects" className="text-primary mt-5 mb-4">Explore my project</h2>
                 <Row xs={1} md={2} lg={3} className="g-4">
                     <Col>
