@@ -5,6 +5,16 @@
     background-size: cover; 
     height: 378px;
 }
+.project-container{
+background-image: url('../../../image/project/projectBackground.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-blend-mode: color-burn;
+}
+.all-project{
+    margin: 0px 40px 0px 40px;
+}
 .project-container a{
     text-decoration: none;
     color: white;

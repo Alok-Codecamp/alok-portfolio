@@ -72,9 +72,9 @@ const Home = () => {
             </div>
 
 
-            <div id='All-projects' className="project-container container">
-                <h2 id="projects" className="text-primary mt-5 mb-4">Explore my project</h2>
-                <Row xs={1} md={2} lg={3} className="g-4">
+            <div id='All-projects' className="project-container">
+                <h2 id="projects" className="text-primary mt-5 mb-4">Explore my recent work</h2>
+                <Row xs={1} md={2} lg={3} className="g-4 all-project">
                     <Col>
                         <Card>
                             <Card.Img variant="top" src={project1} />
