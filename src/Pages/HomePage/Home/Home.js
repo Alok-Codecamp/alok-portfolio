@@ -8,7 +8,7 @@ import project2 from '../../../image/project/pain-care/Screenshot_1.png'
 import project3 from '../../../image/project/Tour-thirsty/Screenshot_1.png'
 import project4 from '../../../image/project/yoga-zone/Screenshot_1.png'
 import project5 from '../../../image/project/tutorial-home/Screenshot_1.png'
-import project6 from '../../../image/project/anytime-buys/Screenshot_1.png'
+import project6 from '../../../image/project/anytime-buys/Screenshot_2.png'
 import ContactMe from '../../ContactMe/ContactMe';
 import me from '../../../image/about/me.jpg';
 import banner from '../../../image/banner/banner1.jpg'
@@ -74,7 +74,8 @@ const Home = () => {
 
             <div id='All-projects' className="project-container">
                 <h2 id="projects" className="text-primary mt-5 mb-4">Explore my recent work</h2>
-                <Row xs={1} md={2} lg={3} className="g-4 all-project">
+                <div className='all-project'>
+                <Row xs={1} md={2} lg={3} className="g-4 ">
                     <Col>
                         <Card>
                             <Card.Img variant="top" src={project1} />
@@ -82,7 +83,7 @@ const Home = () => {
                                 <Card.Title>Mug Fair</Card.Title>
                                 <Card.Text>
                                     Users can register with username, email, and password. And can later log in with email and password.
-                                    Logged-in users can place orders. Placed orders can be viewed at any time by visiting My Order
+                                    Logged-in users can place orders.
                                 </Card.Text>
                                 <Button style={{ marginRight: '10px' }}>
                                     <a href="https://mug-fair.web.app/" target="_blank">Visit</a>
@@ -98,9 +99,7 @@ const Home = () => {
                                 <Card.Title>Pain care</Card.Title>
                                 <Card.Text>
                                     Users can easily book doctor's appointments on this website
-                                    React was used to create the UI of this website and Firebase  was used for authentication.
-                                    Here,
-
+                                    React was used to create the UI of this website and Firebase  was used for authentication...
                                 </Card.Text>
                                 <Button style={{ marginRight: '10px' }}> <a href="https://pain-care-1.web.app/" target="_blank">Visit</a></Button>
                                 <Button style={{ marginLeft: '10px' }}>Details</Button>
@@ -128,7 +127,7 @@ const Home = () => {
                                 <Card.Title>Yoga zone</Card.Title>
                                 <Card.Text>
                                     Through this website, members can be easily contacted and admitted to the Yoga Training Center in the Yoga Zone.
-                                    New members can easily learn about the course rules and fees by visiting the website.
+                                    New members can easily learn about the course rules and fees by visit us.
 
                                 </Card.Text>
                                 <Button style={{ marginRight: '10px' }}> <a href="https://yoga-zone.netlify.app/" target="_blank">Visit</a></Button>
@@ -165,8 +164,9 @@ const Home = () => {
                         </Card>
                     </Col>
                 </Row>
+                </div>
             </div>
-            <div id="contact" className="mb-5 container">
+            <div id="contact" className=" ">
                 <ContactMe></ContactMe>
             </div>
         </div>
