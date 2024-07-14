@@ -34,7 +34,7 @@ const ContactMe = () => {
             <Form.Control id='user-email-input' ref={user_email} name="user_email" type="email" placeholder="enter your email" />
           </Form.Group>
           <Form.Group className="mb-3 user-message" controlId="exampleForm.ControlTextarea1">
-            <Form.Control id='user-message-input' ref={message} name="message" as="textarea" rows={6} placeholder="Type your massage" />
+            <Form.Control id='user-message-input' ref={message} name="message" as="textarea" rows={3} placeholder="Type your massage" />
           </Form.Group>
           <Form.Control id='submit-button' type="submit" value="Send" />
         </Form>
