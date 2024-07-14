@@ -53,10 +53,13 @@
 }
 
 .contact-text{
+    ackground-image: linear-gradient(45deg, black, #064238);
     color: white;
-    margin-left: 77px;
-    margin-right: 13%;
+    margin-left: 60px;
+    margin-right: 9%;
     margin-bottom: 60px;
+    padding: 26px 35px 27px 36px;
+    border-radius: 20px;
 }
 .contact-text>a{
     display: block;
