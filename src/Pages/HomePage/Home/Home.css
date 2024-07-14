@@ -66,6 +66,7 @@ background-blend-mode: color-burn;
 #contact{
     background-image: url('../../../image/pages/contact/background.png');
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 @media (max-width:986px){
