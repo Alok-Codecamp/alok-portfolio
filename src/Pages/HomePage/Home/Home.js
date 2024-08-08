@@ -73,7 +73,7 @@ const Home = () => {
 
 
             <div id='All-projects' className="project-container">
-                <h2 id="projects" className="text-primary mt-5 mb-4">Explore my recent work</h2>
+                <h2 id="projects" >Explore my recent work</h2>
                 <div className='all-project'>
                 <Row xs={1} md={2} lg={3} className="g-4 ">
                     <Col>
