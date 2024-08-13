@@ -23,21 +23,19 @@ const Navigation = () => {
           <li><a href={myResume} download>Download Resume</a></li>
         </ul>
 
-          {/* <button className='download-resumi'>
-            <a href="">Download Resume</a>
-          </button> */}
+        
         </nav>
         <input type="checkbox" name="" id="menu-btn" />
          <label className='bar-line' htmlFor="menu-btn">
          <FontAwesomeIcon color='white' icon={faBars}/>
          </label>
           <ul className='mobile-menu' >
-          <li><a className='active' href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Porject</a></li>
-          <li><a href="#">My Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li> <a href="">Download Resume</a></li>
+          <li><a className='active' href="/home">Home</a></li>
+          <li><a href="/home/#All-projects">Porject</a></li>
+          <li><a href="/blog">My Blog</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/home/#contact">Contact</a></li>
+          <li><a href={myResume} download>Download Resume</a></li>
         </ul>
     
            

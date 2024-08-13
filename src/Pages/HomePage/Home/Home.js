@@ -19,28 +19,13 @@ import { faArrowAltCircleDown,faEnvelope } from '@fortawesome/free-solid-svg-ico
 import { useEffect } from 'react';
 
 const Home = () => {
-    // const [isButtonClick, setButtonClick] = useState(true);
-    const contact = document.getElementById('mail');
-    // const handleContactNavLink=() =>{
-    //     setButtonClick(false);
-    //     if(isButtonClick){
-    //         contact.click();
-    //         console.log('its work')
-    //     }        
-    // }
-    // useEffect(()=>{
-       
-    // },[isButtonClick])
-    // handleContact={handleContactNavLink}
-    const ClickContact = ()=>{
-        contact.click()
-        // console.log('hi, I am here');
-    }
+
+    
     return (
         <div className="container-div">
-            <div className="banner  text-light">
+            <div className="banner">
                 {/* <img src={banner} alt="" /> */}
-                <Navigation ClickContact={ClickContact} ></Navigation>
+                <Navigation></Navigation>
                 <div className='bannar-content'>
 
                   <div className='banner-footer'>

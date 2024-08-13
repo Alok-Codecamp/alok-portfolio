@@ -49,6 +49,29 @@ nav.Nav-bar-text ul.desktop-menu{
     display: none;
 }
 
+@media only screen and (min-width:2160px) {
+    .Nav-bar-text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 34px;
+        text-align: left;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px 0px 20px;
+    }
+    .Nav-bar-text ul.desktop-menu li a{
+        color: white;
+        background-color: #085B51;
+        padding: 3px 10px 3px 10px;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 22px;
+    }
+}
+
 @media (max-width:988px){
     .bar-line{
         display: block;
