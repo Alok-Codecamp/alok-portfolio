@@ -8,7 +8,7 @@
 .banner-footer {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-top: 17%;
     padding-bottom: 2%;
 }
@@ -116,23 +116,79 @@
         margin-right: 364px;
     }
 }
-@media (max-width:986px) {
-   .banner{
-    margin-top: 0px;
-   }
-   .banner-footer{
-    margin-top: 42px;
-    position: relative;
-    top: 240px;
-    right: 18px;
-   }
-   .resume-download-button{
-    
-   }
+
+@media (min-width:1366px) {
+    .banner-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 17%;
+        padding-bottom: 3%;
+}
+.resume-download-button {
+    font-size: 28px;
+    border: 1px solid;
+    border-radius: 11px;
+    margin-right: 68px;
+    padding: 0 10px 0 10px;
+}
+    .contact-link {
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 300px;
+       
+    }
+
 }
 
-@media (max-width:688px) {
-   
-  
+@media (max-width:1365px) {
+    .banner{
+     margin-top: 0px;
+    }
+    .banner-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 42px;
+        padding-top: 186px;
+    }
+    .resume-download-button{
+        font-size: 20px;
+        padding: 4px 10px 4px 10px;
+    }
+    .resume-download-icon {
+        margin: 0px 0px 0px 10px;
+    }
+    .contact-link {
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 125px;
+    }
 
-}
+    .contact-link>p {
+        color: white;
+        margin: 16px 0px 0px 0px;
+    }
+
+
+    /* contact page design */
+
+    .Contact-page-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+   }
+   .contact-text {
+    background-image: linear-gradient(45deg, #000, #064238);
+    color: #fff;
+    margin-left: 68px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+    padding: 62px 35px 62px 36px;
+    border-radius: 20px;
+   }
+ }

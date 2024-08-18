@@ -1,13 +1,13 @@
 import React from 'react';
 import './NavBar.css';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 import myResume from '../../../Rezumi/Alok Kumar.docx.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars } from '@fortawesome/free-solid-svg-icons';
 import mern from '../../../image/banner logo/mern.png'
 
 const Navigation = () => {
+
+
     return (
        <div>
        <nav className='Nav-bar-text'>
@@ -37,9 +37,6 @@ const Navigation = () => {
           <li><a href="/home/#contact">Contact</a></li>
           <li><a href={myResume} download>Download Resume</a></li>
         </ul>
-    
-           
-       
        </div>
     );
 };

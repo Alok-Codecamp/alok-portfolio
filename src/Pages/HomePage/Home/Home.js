@@ -19,10 +19,10 @@ import { faArrowAltCircleDown,faEnvelope } from '@fortawesome/free-solid-svg-ico
 import { useEffect } from 'react';
 
 const Home = () => {
-
+  
     
     return (
-        <div className="container-div">
+        <div id='check' className="container-div">
             <div className="banner">
                 {/* <img src={banner} alt="" /> */}
                 <Navigation></Navigation>
