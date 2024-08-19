@@ -63,3 +63,10 @@
     text-decoration: none;
     margin-left: -16px;
 }
+
+@media  only screen and (max-width:600px) {
+    #user-message-input, #user-name-input, #user-email-input{
+        width:100%;
+    
+    }
+}

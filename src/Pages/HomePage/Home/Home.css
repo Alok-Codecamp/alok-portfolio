@@ -5,6 +5,7 @@
     background-size: cover;
 
 }
+
 .banner-footer {
     display: flex;
     align-items: center;
@@ -95,7 +96,7 @@
     padding-top: 100px;
 }
 
-@media only screen and (min-width:2160px){
+@media only screen and (min-width:2160px) {
     .banner-footer {
         display: flex;
         align-items: center;
@@ -103,6 +104,7 @@
         margin-top: 20%;
         padding-bottom: 3%;
     }
+
     .resume-download-button {
         font-size: 56px;
         border: 1px solid;
@@ -110,10 +112,22 @@
         margin-left: 76px;
         padding: 0 5px 0 5px;
     }
+
     .contact-link {
         font-size: 56px;
         display: flex;
         margin-right: 364px;
+    }
+
+    #projects {
+        background-image: linear-gradient(45deg, #032616, black);
+        color: white;
+        font-size: 56px;
+        margin-left: 42%;
+        width: fit-content;
+        padding: 8px;
+        border-radius: 12px;
+
     }
 }
 
@@ -124,43 +138,49 @@
         justify-content: center;
         margin-top: 17%;
         padding-bottom: 3%;
-}
-.resume-download-button {
-    font-size: 28px;
-    border: 1px solid;
-    border-radius: 11px;
-    margin-right: 68px;
-    padding: 0 10px 0 10px;
-}
+    }
+
+    .resume-download-button {
+        font-size: 28px;
+        border: 1px solid;
+        border-radius: 11px;
+        margin-right: 68px;
+        padding: 0 10px 0 10px;
+    }
+
     .contact-link {
         font-size: 28px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 300px;
-       
+
     }
 
 }
 
 @media (max-width:1365px) {
-    .banner{
-     margin-top: 0px;
+    .banner {
+        margin-top: 0px;
     }
-    .banner-footer{
+
+    .banner-footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 42px;
         padding-top: 186px;
     }
-    .resume-download-button{
+
+    .resume-download-button {
         font-size: 20px;
         padding: 4px 10px 4px 10px;
     }
+
     .resume-download-icon {
         margin: 0px 0px 0px 10px;
     }
+
     .contact-link {
         font-size: 20px;
         justify-content: center;
@@ -181,17 +201,81 @@
         align-items: center;
         flex-direction: column-reverse;
         justify-content: center;
-   }
-   .contact-text {
-    background-image: linear-gradient(45deg, #000, #064238);
-    color: #fff;
-    margin-left: 68px;
-    margin-right: 50px;
-    margin-bottom: 60px;
-    padding: 62px 35px 62px 36px;
-    border-radius: 20px;
-   }
-   .form-container{
-    margin-top: 100px;
-   }
- }
+    }
+
+    .contact-text {
+        background-image: linear-gradient(45deg, #000, #064238);
+        color: #fff;
+        margin-left: 68px;
+        margin-right: 50px;
+        margin-bottom: 60px;
+        padding: 62px 35px 62px 36px;
+        border-radius: 20px;
+    }
+
+    .form-container {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    #projects {
+        color: white;
+        margin-left: 292px;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 8px;
+        border-radius: 12px;
+        background-image: linear-gradient(45deg, #032616, black);
+    }
+
+    .banner {
+        background-image: url('../../../image/banner/banner1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .banner-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 17%;
+        padding-bottom: 2%;
+    }
+
+    .resume-download-button {
+        font-size: 14px;
+        border: 1px solid;
+        border-radius: 11px;
+        margin-left: 34px;
+        padding: 0 5px 0 5px;
+    }
+    .contact-link {
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 150px;
+}
+.contact-link>p {
+    color: white;
+    margin: 20px 0px 0px 0px;
+}
+}
+
+@media only screen and (max-width:600px){
+    .banner-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 7%;
+        padding-bottom: 2%;
+}
+    .contact-link {
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 60px;
+}
+}
