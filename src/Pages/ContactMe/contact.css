@@ -14,7 +14,8 @@
 /* style for contact form  */
 #contact-form{
     background-image: linear-gradient(45deg, #000, #064238);
-       margin-left: 08px;
+       margin-left: 04px;
+       margin-right: 4px;
        padding-top: 36px;
        padding-bottom: 36px;
        padding-right: 50px;
@@ -50,8 +51,8 @@
 .contact-text{
     background-image: linear-gradient(45deg, #000, #064238);
     color: #fff;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 68px;
+    margin-right: 50px;
     margin-bottom: -62px;
     padding: 62px 35px 62px 36px;
     border-radius: 20px;
@@ -67,6 +68,16 @@
 @media  only screen and (max-width:600px) {
     #user-message-input, #user-name-input, #user-email-input{
         width:100%;
+    
+    }
+    .contact-text{
+        background-image: linear-gradient(45deg, #000, #064238);
+        color: #fff;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: -62px;
+        padding: 62px 35px 62px 36px;
+        border-radius: 20px;
     
     }
 }
